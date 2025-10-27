@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meri Simple Website</title>
+  <style>
+    body{font-family:system-ui,sans-serif;max-width:800px;margin:40px auto;padding:0 16px;line-height:1.6}
+    header{border-bottom:1px solid #eee;padding-bottom:10px;margin-bottom:20px}
+    h1{margin:0 0 6px}
+    .btn{display:inline-block;margin-top:12px;padding:8px 12px;border:1px solid #222;border-radius:6px;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rahul ke liye Simple Website</h1>
+    <p>Yeh ek seedha-saadha, lightweight page hai — bina kisi extra design ke.</p>
+    <a class="btn" href="#contact">Contact</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Mera Kaam</h2>
+      <p>Yahan apna brief description likh lo — business idea, product list, ya contact details.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <em>tumhara-email@example.com</em></p>
+      <p>Phone: <em>+91-XXXXXXXXXX</em></p>
+    </section>
+  </main>
+
+  <footer style="margin-top:30px;border-top:1px solid #eee;padding-top:12px">
+    <small>© <span id="year"></span> Rahul</small>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
